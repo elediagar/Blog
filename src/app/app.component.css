@@ -1,0 +1,17 @@
+.bg-light {
+    background-color: #c80046 !important;
+}
+
+.navbar-light .navbar-brand {
+    color: white;
+}
+
+.btn-outline-success {
+    color: white;
+    border-color: white;
+}
+
+.btn-outline-success:hover {
+    background-color: #a00038;
+}
+

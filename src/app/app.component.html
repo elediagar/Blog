@@ -1,1 +1,9 @@
-<router-outlet></router-outlet>
+<nav class="navbar navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" [routerLink]="['blog']">Inicio</a>
+    <button class="btn btn-outline-success" [routerLink]="['formulario']">Nuevo Post</button>
+  </div>
+</nav>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

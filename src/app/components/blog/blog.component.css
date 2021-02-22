@@ -1,0 +1,29 @@
+.h1, h1 {
+    font-size: 3rem;
+}
+
+.mb-4, .my-4 {
+    margin-bottom: 1.5rem !important;
+    margin-top: 1.5rem ;
+
+}
+
+li {
+    cursor: pointer;
+}
+
+li:hover{
+    background-color: #ebebeb;
+}
+
+
+.list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    background-color: #e8a9bf;
+    border-color: #e8a9bf;
+}
+
+.card{
+    margin-bottom: 20px;
+}
