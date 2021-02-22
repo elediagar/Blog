@@ -15,3 +15,7 @@
     background-color: #a00038;
 }
 
+.btn-outline-success:active {
+    background-color: #85002f;
+}
+

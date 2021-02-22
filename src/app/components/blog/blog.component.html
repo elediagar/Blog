@@ -7,7 +7,7 @@
                 <div class="card-body">
                     <h5 class="card-title">{{post.titulo}}</h5>
                     <p class="card-text">{{post.texto}}</p>
-                    <p class="card-text"><small class="text-muted">{{post.fecha}}</small></p>
+                    <p class="card-text"><small class="text-muted">{{post.fecha | date: 'shortDate'}}</small></p>
                 </div>
                 <img [src]="post.imagen" class="card-img-bottom" alt="...">
             </div>
@@ -15,14 +15,16 @@
         <div class="col-md-4">
             <h4>Categorías</h4>
             <ul class="list-group list-group-flush">
-                <li class=" list-group-item" (click)="onClick('marketing')" [ngClass]="{'active': status}">
+                <li class=" list-group-item" (click)="onClick('marketing')"
+                    [ngClass]="{active: status === 'marketing'}">
                     Marketing
                     Digital</li>
-                <li class="list-group-item" (click)="onClick('ux')" [ngClass]="{'active': status}">UX/UI</li>
-                <li class="list-group-item" (click)="onClick('desarrollo')" [ngClass]="{'active': status}">
+                <li class="list-group-item" (click)="onClick('ux')" [ngClass]="{active: status === 'ux'}">UX/UI</li>
+                <li class="list-group-item" (click)="onClick('desarrollo')"
+                    [ngClass]="{active: status === 'desarrollo'}">
                     Desarrollo web</li>
-                <li class="list-group-item" (click)="onClick('cms')" [ngClass]="{'active': status}">CMS</li>
-                <li class="list-group-item" (click)="onClick('seo')" [ngClass]="{'active': status}">SEO/SEM
+                <li class="list-group-item" (click)="onClick('cms')" [ngClass]="{active: status === 'cms'}">CMS</li>
+                <li class="list-group-item" (click)="onClick('seo')" [ngClass]="{active: status === 'seo'}">SEO/SEM
                 </li>
             </ul>
         </div>

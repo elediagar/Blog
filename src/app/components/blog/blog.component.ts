@@ -9,21 +9,22 @@ import { Post, PostsService } from 'src/app/services/posts.service';
 export class BlogComponent implements OnInit {
 
   posts: Post[];
-  status: boolean;
+  status: string;
+
 
   constructor(private postsService: PostsService) {
-    this.status = false;
+
   }
 
   async ngOnInit() {
-    this.posts = await this.postsService.getAllPosts();
-
+    this.posts = (await this.postsService.getAllPosts()).reverse();
   }
 
 
   async onClick($event) {
     this.posts = await this.postsService.getPostByCathegory($event);
-    this.status = !this.status;
+
+    this.status = $event;
   }
 
 

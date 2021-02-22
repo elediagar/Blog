@@ -18,7 +18,7 @@ export class PostsService {
 
   constructor() {
     if (localStorage.getItem('arr_posts')) {
-      this.listaPosts = JSON.parse(localStorage.getItem('arr_posts'))
+      this.listaPosts = (JSON.parse(localStorage.getItem('arr_posts')))
     } else {
       this.listaPosts = [];
     }

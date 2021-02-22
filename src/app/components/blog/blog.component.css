@@ -20,8 +20,8 @@ li:hover{
 .list-group-item.active {
     z-index: 2;
     color: #fff;
-    background-color: #e8a9bf;
-    border-color: #e8a9bf;
+    background-color: #24cadc;
+    border-color: #24cadc;
 }
 
 .card{
