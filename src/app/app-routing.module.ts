@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AdminComponent } from './components/admin/admin.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { FormularioComponent } from './components/formulario/formulario.component';
 
@@ -7,6 +8,7 @@ const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'blog' },
   { path: 'blog', component: BlogComponent },
   { path: 'formulario', component: FormularioComponent },
+  { path: 'admin', component: AdminComponent },
   { path: '**', redirectTo: 'blog' },
 ];
 
