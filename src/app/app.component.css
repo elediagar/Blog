@@ -19,3 +19,27 @@
     background-color: #85002f;
 }
 
+.text-muted {
+    color: #b3b3b3 !important;
+    background-color: #222222;
+}
+
+footer a{
+    color: #b3b3b3 !important;
+    text-decoration: underline;
+}
+
+footer a:hover{
+    color: #a00038;
+}
+
+.left .navbar-brand {
+    padding-top: .33rem;
+    padding-bottom: .30rem;
+    margin-right: 1rem;
+    font-size: 1.00rem;
+    line-height: inherit;
+    white-space: nowrap;
+    color: rgb(231, 231, 231);
+}
+

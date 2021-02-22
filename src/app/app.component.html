@@ -1,10 +1,21 @@
 <nav class="navbar navbar-light bg-light">
   <div class="container-fluid">
+
     <a class="navbar-brand" [routerLink]="['blog']">Inicio</a>
-    <a class="navbar-brand" [routerLink]="['admin']">Admin</a>
-    <button class="btn btn-outline-success" [routerLink]="['formulario']">Nuevo Post</button>
+    <div class="left">
+      <a class="navbar-brand" [routerLink]="['admin']">Admin</a>
+      <button class="btn btn-outline-success" [routerLink]="['formulario']">Nuevo Post</button>
+    </div>
   </div>
 </nav>
 <div class="container">
   <router-outlet></router-outlet>
 </div>
+<footer class="text-muted py-5">
+  <div class="container">
+    <p class="float-end mb-1">© 2017–2021
+    </p>
+    <p class="mb-1">This blog was created during the Neoland Full-Stack BOOTCAMP.</p>
+    <p class="mb-0">Want to see more? <a href="https://github.com/elediagar">Visit my github respository.</a>
+  </div>
+</footer>

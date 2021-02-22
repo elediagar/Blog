@@ -5,3 +5,7 @@
 .delete:hover{
     color: #c80046;
 }
+
+.container{
+    min-height: 65vh;
+}
